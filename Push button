@@ -1,0 +1,21 @@
+	// _PUSH_BUTTON
+	int ledPin = 13; 
+	int in LED Pin = 7;   
+	int val = 0;   
+	 
+	void setup() {
+	  pinMode(ledPin, OUTPUT);  
+	  pinMode(inPin, INPUT);  
+	}
+	 
+	void loop(){
+	  val = digitalRead(inPin);
+	  if (val == HIGH) {      
+	    digitalWrite(ledPin, LOW); 
+	  } else {
+	    digitalWrite(ledPin, HIGH); 
+	  }
+	}
+	//Made by – Sejal singh
+	//UID - 19BCS4066
+
