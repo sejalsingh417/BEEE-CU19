@@ -1,0 +1,16 @@
+const int a = 7;
+void setup() {
+pinMode(a, OUTPUT);
+}
+void loop() {
+int c = analogRead(A0);
+delay(500);
+if ( c<450){
+digitalWrite(a,HIGH);
+delay(1000);
+}
+else {
+digitalWrite(a,LOW);
+delay(1000);
+}
+}
